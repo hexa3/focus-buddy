@@ -1,0 +1,27 @@
+# --- build output ---
+firmware/.pio/
+sim/fbsim
+__pycache__/
+*.pyc
+
+# --- generated exports (rebuild with tools/make_all.sh, video/*.py) ---
+hardware/fab/
+hardware/BOM.csv
+hardware/cad/stl/
+hardware/cad/render/
+hardware/pcb/*.dsn
+hardware/pcb/*.ses
+hardware/pcb/*.rpt
+hardware/pcb/*.net
+hardware/pcb/*.pdf
+hardware/pcb/sch_svg/
+docs/images/
+video/*.mp4
+*.zip
+
+# --- KiCad local/user state ---
+*.kicad_prl
+*-backups/
+fp-info-cache
+_autosave-*
+*.lck

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "focusbuddy")(type "KiCad")(uri "${KIPRJMOD}/focusbuddy.kicad_sym")(options "")(descr "Focus Buddy parts"))
+)
