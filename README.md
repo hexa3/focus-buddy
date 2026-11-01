@@ -8,6 +8,35 @@ An e-ink Pomodoro companion for your desk. A little tomato with a face counts do
 - **All through-hole**, 18 parts, about 2 h to build
 - Light sleep between screen updates; deep sleep (≈0.05 mA) after 3 min idle. E-ink keeps the image with zero power.
 
+## Pictures
+
+> No unit has been built yet, so these aren't photos. Each one comes straight from the project files:
+> KiCad renders and exports, the real enclosure geometry, and screens drawn by the actual firmware in the desktop simulator.
+
+**The screens:** every state, drawn by `firmware/src/ui.cpp`
+
+![All firmware screens: splash, idle, focus, final minute, done, long break, stats, sleep](docs/readme/screens.png)
+
+**The PCB:** 106 × 64 mm, 2 layers, all through-hole (KiCad 3D render)
+
+![PCB 3D render, component side](docs/readme/pcb-3d.png)
+
+**Routing:** back copper layer, seen from behind (KiCad export)
+
+![PCB back copper layer with routed tracks](docs/readme/pcb-routing-back.png)
+
+**The case:** front shell, PCB, back cover and button caps, exploded (rendered from the OpenSCAD model)
+
+![Exploded view of the 3D-printed enclosure](docs/readme/enclosure-exploded.png)
+
+**The schematic** (KiCad export)
+
+![Schematic](docs/readme/schematic.png)
+
+**The buddy talks:** speech bubble added in the latest display update (before / after, real firmware output)
+
+<img src="docs/readme/feature-speech-bubble.png" alt="Before/after: the speech bubble under the buddy" width="360">
+
 ## What's in here
 
 This repo holds **source files only**. Gerbers, STLs, STEP, PDFs, renders and videos are generated from them
