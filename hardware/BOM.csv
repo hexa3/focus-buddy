@@ -1,0 +1,41 @@
+Category,Item,Qty,Refs,Specification / notes,Required,Footprint,Search term
+PCB electronics,Seeed Studio XIAO ESP32-C3,1,U1,"Seeed Studio XIAO ESP32-C3 (with antenna), soldered on 2x 1x7 male headers",Yes,Seeed_XIAO_THT,Seeed XIAO ESP32C3
+PCB electronics,"Pin header 1x8 male, 2.54 mm",1,J1,"1x8 2.54 mm male header, display cable (VCC GND DIN CLK CS DC RST BUSY)",Yes,PinHeader_1x08_P2.54mm_Vertical,2.54mm 1x8 male header
+PCB electronics,"JST-PH 2-pin socket, vertical (B2B-PH-K)",1,J2,"JST-PH 2-pin vertical, optional 3.7 V LiPo (CHECK POLARITY)",Optional (battery),JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,JST B2B-PH-K-S
+PCB electronics,No part: 2 solder holes,0,J3,Short wire from the XIAO BAT+ pad lands here (see Consumables),Optional (battery),PinHeader_1x02_P2.54mm_Vertical,
+PCB electronics,"Buzzer 12 mm, 3 V, 7.6 mm pin spacing",1,BZ1,"12 mm passive/magnetic buzzer 3 V, 7.6 mm pin spacing",Yes,Buzzer_12x9.5RM7.6,12x9.5mm 3V passive buzzer 7.6mm
+PCB electronics,"NPN transistor 2N3904, TO-92",1,Q1,"NPN transistor TO-92 (2N3904 / S8050 / BC337, EBC pinout)",Yes,TO-92_Inline_Wide,2N3904 TO-92
+PCB electronics,Diode 1N4148,1,D1,1N4148 flyback diode (cathode band to +3V3),Yes,D_DO-35_SOD27_P7.62mm_Horizontal,1N4148 DO-35
+PCB electronics,Resistor 1 MΩ,2,R1 R2,1/4 W axial. Battery-voltage divider (fit even without a battery: keeps the ADC from floating),Yes,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,
+PCB electronics,Capacitor 100 nF ceramic,1,C1,"100 nF ceramic, ADC filter",Yes,C_Disc_D5.0mm_W2.5mm_P5.00mm,
+PCB electronics,Resistor 1 kΩ,1,R3,1/4 W axial. Transistor base resistor,Yes,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,
+PCB electronics,Resistor 10 kΩ,4,R4 R5 R6 R7,"1/4 W axial, 5 % or better. R4-R6 button pull-ups, R7 transistor base pull-down",Yes,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,
+PCB electronics,"Tactile switch 6x6 mm, 9.5 mm tall, through-hole",3,SW1 SW2 SW3,"6x6 mm tactile switch, 9.5 mm tall",Yes,SW_PUSH_6mm_H9.5mm,6x6x9.5mm tactile switch THT
+Off-board electronics,"2.9"" e-paper module, Waveshare V2",1,DISP1,"296x128 black/white, SSD1680 driver, with its 8-wire cable (PH2.0 to female jumpers). Firmware also supports Waveshare V1 and WeAct 2.9"" (pick the matching build target)",Yes,-,Waveshare 2.9inch e-Paper Module
+Off-board electronics,"Male pin header 1x7, 2.54 mm",2,-,Mounts the XIAO on the PCB. Often included with the XIAO; buy if yours didn't come with them,Yes,-,2.54mm 1x7 male header
+Off-board electronics,Wi-Fi/BLE antenna (U.FL FPC),1,-,"Included with the XIAO ESP32C3. Not needed for the timer, but keep it plugged in if you ever use radio",Included,-,
+Off-board electronics,LiPo battery 3.7 V,1,BT1,"400-1000 mAh, JST-PH 2.0 plug, max 40 x 30 x 6 mm to fit inside the back cover. CHECK POLARITY: red wire must go to J2 pin 1 (+, square pad)",Optional,-,3.7V lipo JST PH 2.0 500mAh
+PCB,Printed circuit board,1,-,"106 x 64 mm, 2 layers, 1.6 mm FR-4, HASL, any colour. Generate the Gerber zip with tools/make_all.sh (hardware/fab/focus-buddy-gerbers.zip). Fabs usually sell a minimum of 5",Yes,-,JLCPCB / PCBWay / OSH Park
+Mechanical,Screw M3 x 20 mm,4,-,"Pan or socket head. Self-taps into the 2.5 mm printed holes; clamps back cover, PCB and front shell together",Yes,-,M3x20 screw
+Mechanical,Heat-set insert M3 (instead of self-tapping),4,-,Only if you prefer metal threads: set pilot_d = 4.0 in enclosure.scad and re-export the front shell,Optional,-,M3 heat set insert 4mm
+Mechanical,Double-sided foam tape,~10 cm,-,"About 5 mm wide, 1 mm thick. Holds the display glass against the window",Yes,-,double sided foam tape 1mm
+Mechanical,Kapton or electrical tape,a few cm,-,Holds the LiPo and antenna inside the back cover and insulates the battery,Optional,-,
+Printed parts,Front shell,1,-,"focus-buddy-front.stl. Prints face-down, no supports. 34.3 cm³ solid. STLs come from tools/make_all.sh",Yes,-,
+Printed parts,Back cover,1,-,"focus-buddy-back.stl. Outside face down, no supports. 17.7 cm³ solid. STLs come from tools/make_all.sh",Yes,-,
+Printed parts,Button cap,3,-,focus-buddy-caps.stl (all 3 on one plate). Flange down. 1.0 cm³ solid in total. STLs come from tools/make_all.sh,Yes,-,
+Printed parts,Desk stand (15°),1,-,focus-buddy-stand.stl. Prints on its side. 32.8 cm³ solid. STLs come from tools/make_all.sh,Optional,-,
+Consumables,PLA or PETG filament,~110 g,-,"All parts together are 85.7 cm³, which is 106 g of PLA even printed 100 % solid. 3 walls / 20 % infill uses less. A contrasting colour for the caps looks great",Yes,-,
+Consumables,Solder wire,~1 m,-,"0.6-0.8 mm, rosin core (63/37 leaded or SAC305 lead-free). About 80 joints",Yes,-,
+Consumables,Hook-up wire,~5 cm,-,"Thin (26-30 AWG), red. XIAO BAT+ pad to the J3 BAT+ hole. Only with a battery",Optional,-,
+Consumables,Flux pen,1,-,Makes the XIAO header joints easier,Optional,-,
+Tools,Soldering iron,1,-,"Temperature-controlled, fine conical or chisel tip",Yes,-,
+Tools,Flush cutters,1,-,Trim every lead on the front of the PCB flush: the display sits a few mm in front of it,Yes,-,
+Tools,Multimeter,1,-,Check 3V3 is not shorted to GND before power-up; check LiPo polarity,Yes,-,
+Tools,3D printer (or a print service),1,-,Bed at least 115 x 75 mm (the front shell is 112.8 x 70.8 x 28 mm),Yes,-,
+Tools,Screwdriver for M3,1,-,"Phillips or hex, matching your screws",Yes,-,
+Tools,Soldering iron insert tip,1,-,Only for heat-set inserts,Optional,-,
+Tools,Tweezers / helping hands,1,-,Nice to have for the XIAO headers,Optional,-,
+Tools,USB-C data cable + computer,1,-,"Must be a data cable, not charge-only. Powers the device and flashes the firmware",Yes,-,
+Software,PlatformIO,1,-,"pip install platformio, then `pio run -t upload` in firmware/",Yes,-,
+Software,Docker,1,-,Runs tools/make_all.sh (KiCad 9 + OpenSCAD images) to generate Gerbers and STLs,Yes,-,
+Software,KiCad 9 / OpenSCAD,1,-,Only to view or edit the design files,Optional,-,

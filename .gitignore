@@ -6,7 +6,6 @@ __pycache__/
 
 # --- generated exports (rebuild with tools/make_all.sh, video/*.py) ---
 hardware/fab/
-hardware/BOM.csv
 hardware/cad/stl/
 hardware/cad/render/
 hardware/pcb/*.dsn
