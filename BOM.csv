@@ -1,2 +1,19 @@
 Item,Qty,Supplier,Cost/item,Total Cost,link
+Seeed Studio XIAO ESP32-C3 (MCU board),1,Seeed Studio,$4.90,$4.90,https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html
+"Waveshare 2.9inch e-Paper Module, B/W 296x128, SKU 12956 (incl. 8-pin cable)",1,Waveshare,$21.99,$21.99,https://www.waveshare.com/2.9inch-e-paper-module.htm
+"PCB 2-layer 106x64 mm, min. order 5 (get a quote: 106 mm is over the 100x100 mm $2 tier)",5,JLCPCB,quote,quote,https://jlcpcb.com/quote
+"Tactile switch 6x6 mm, 9.5 mm tall, THT",3,Tayda Electronics,$0.040,$0.12,https://www.taydaelectronics.com/tact-switch-6x6mm-9-5mm-through-hole-spst-no.html
+Resistor 10k 1/4W metal film,4,Tayda Electronics,$0.015,$0.06,https://www.taydaelectronics.com/resistors/1-4w-metal-film-resistors.html
+Resistor 1M 1/4W metal film,2,Tayda Electronics,$0.015,$0.03,https://www.taydaelectronics.com/resistors/1-4w-metal-film-resistors.html
+Resistor 1k 1/4W metal film,1,Tayda Electronics,$0.015,$0.01,https://www.taydaelectronics.com/resistors/1-4w-metal-film-resistors.html
+"NPN transistor 2N3904, TO-92",1,Futurlec,$0.060,$0.06,https://www.futurlec.com/Transistors/2N3904pr.shtml
+"Diode 1N4148, DO-35 (price est.)",1,Tayda Electronics,$0.020,$0.02,
+"Buzzer 12 mm 3 V passive/magnetic, 7.6 mm pin spacing (price est.)",1,Tayda Electronics,$0.50,$0.50,
+"Capacitor 100 nF ceramic, 5 mm pitch (price est.)",1,Tayda Electronics,$0.020,$0.02,
+"Male pin header 1x40, 2.54 mm: cut 1x8 for the display + 2x 1x7 for the XIAO if not included (price est.)",1,Tayda Electronics,$0.15,$0.15,
+M3 x 20 mm screw (price est.),4,Any hardware store,$0.10,$0.40,
+"Double-sided foam tape, ~10 cm (price est.)",1,Any,$1.00,$1.00,
+"PLA filament for the case, ~110 g of a 1 kg spool (price est.)",1,Any,$2.20,$2.20,
+"OPTIONAL: LiPo 3.7 V 500 mAh, JST-PH 2.0 (price est.)",1,Any,$5.00,$5.00,
+OPTIONAL: JST-PH 2-pin vertical socket B2B-PH-K (price est.),1,Tayda Electronics,$0.10,$0.10,
 Estimated total shipping,1,,,$0.00,
